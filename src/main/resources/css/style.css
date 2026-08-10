@@ -68,13 +68,11 @@
     -fx-font-weight: bold;
     -fx-text-fill: #F8F8FA;
 }
-
 .page-title {
     -fx-font-size: 32px;
     -fx-font-weight: bold;
-    -fx-text-fill: #F8F8FA;
+    -fx-text-fill: #25233F;
 }
-
 .page-subtitle {
     -fx-font-size: 14px;
     -fx-text-fill: #A8AEC3;
