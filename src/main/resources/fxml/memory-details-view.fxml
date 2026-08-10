@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.echoes.echoes.controller.MemoryDetailsController"
+            styleClass="root">
+
+    <center>
+
+        <ScrollPane fitToWidth="true"
+                    hbarPolicy="NEVER"
+                    style="-fx-background:#0A0A18;">
+
+            <content>
+
+                <VBox spacing="25"
+                      alignment="TOP_CENTER"
+                      styleClass="content">
+
+                    <padding>
+                        <Insets top="40"
+                                right="60"
+                                bottom="40"
+                                left="60"/>
+                    </padding>
+
+                    <!-- Back -->
+
+                    <HBox alignment="CENTER_LEFT">
+
+                        <Button text="← Back"
+                                onAction="#handleBack"
+                                styleClass="sidebar-button"/>
+
+                    </HBox>
+
+                    <!-- Song -->
+
+                    <Label fx:id="songLabel"
+                           styleClass="memory-song"/>
+                    <VBox spacing="15"
+                          alignment="CENTER"
+                          styleClass="memory-card">
+
+                        <padding>
+                            <Insets top="20"
+                                    right="20"
+                                    bottom="20"
+                                    left="20"/>
+                        </padding>
+
+                        <Label text="Now Playing"
+                               styleClass="memory-info"/>
+
+                        <HBox spacing="15"
+                              alignment="CENTER">
+
+                            <Button fx:id="playButton"
+                                    text="▶ Play"
+                                    onAction="#handlePlay"/>
+
+                            <Button fx:id="pauseButton"
+                                    text="⏸ Pause"
+                                    onAction="#handlePause"/>
+
+                            <Button fx:id="stopButton"
+                                    text="⏹ Stop"
+                                    onAction="#handleStop"/>
+
+                        </HBox>
+
+                    </VBox>
+                    <VBox spacing="8" alignment="CENTER">
+
+                        <Slider fx:id="progressSlider"
+                                prefWidth="420"/>
+
+                        <BorderPane prefWidth="420">
+
+                            <left>
+                                <Label fx:id="currentTimeLabel"
+                                       text="00:00"
+                                       styleClass="memory-info"/>
+                            </left>
+
+                            <right>
+                                <Label fx:id="totalTimeLabel"
+                                       text="00:00"
+                                       styleClass="memory-info"/>
+                            </right>
+
+                        </BorderPane>
+
+                    </VBox>
+                    <HBox spacing="12"
+                          alignment="CENTER">
+
+                        <Label text="🔊"
+                               styleClass="memory-info"/>
+
+                        <Slider fx:id="volumeSlider"
+                                min="0"
+                                max="100"
+                                value="70"
+                                prefWidth="150"/>
+
+                    </HBox>
+                    <!-- Title -->
+
+                    <Label fx:id="titleLabel"
+                           styleClass="heading"/>
+
+                    <!-- Story -->
+
+                    <VBox spacing="15"
+                          styleClass="memory-card">
+
+                        <padding>
+                            <Insets top="25"
+                                    right="25"
+                                    bottom="25"
+                                    left="25"/>
+                        </padding>
+
+                        <Label fx:id="storyLabel"
+                               wrapText="true"
+                               styleClass="memory-story"/>
+
+                    </VBox>
+
+                    <!-- Info -->
+
+                    <HBox spacing="40"
+                          alignment="CENTER">
+
+                        <Label fx:id="emotionLabel"
+                               styleClass="memory-info"/>
+
+                        <Label fx:id="locationLabel"
+                               styleClass="memory-info"/>
+
+                        <Label fx:id="dateLabel"
+                               styleClass="memory-info"/>
+
+                    </HBox>
+
+                    <Region prefHeight="10"/>
+
+                    <!-- Actions -->
+
+                    <HBox spacing="20"
+                          alignment="CENTER">
+
+                        <Button fx:id="favoriteButton"
+                                text="♡ Add to Favorites"
+                                onAction="#handleFavorite"
+                                styleClass="favorite-button"/>
+
+                        <Button text="✏ Edit Memory"
+                                onAction="#handleEdit"
+                                styleClass="begin-button"/>
+
+                        <Button text="🗑 Delete Memory"
+                                onAction="#handleDelete"
+                                styleClass="begin-button"/>
+
+                    </HBox>
+
+                </VBox>
+
+            </content>
+
+        </ScrollPane>
+
+    </center>
+
+</BorderPane>

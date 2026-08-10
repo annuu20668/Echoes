@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="cardRoot"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.echoes.echoes.controller.MemoryCardController"
+      spacing="12"
+      fillWidth="true"
+      styleClass="memory-card">
+
+    <padding>
+        <Insets top="18"
+                right="20"
+                bottom="18"
+                left="20"/>
+    </padding>
+
+
+    <!-- =====================================================
+         MUSIC HEADER
+         ===================================================== -->
+
+    <HBox spacing="15"
+          alignment="CENTER_LEFT">
+
+        <ImageView fx:id="albumCoverImage"
+                   fitWidth="78"
+                   fitHeight="78"
+                   preserveRatio="true"
+                   smooth="true"/>
+
+        <VBox spacing="5"
+              alignment="CENTER_LEFT">
+
+            <Label fx:id="songLabel"
+                   styleClass="memory-song"
+                   wrapText="true"/>
+
+            <Label text="Music attached to this memory"
+                   styleClass="memory-info"/>
+
+        </VBox>
+
+    </HBox>
+
+
+    <!-- =====================================================
+         DIVIDER
+         ===================================================== -->
+
+    <Region styleClass="divider"
+            minHeight="1"
+            prefHeight="1"
+            maxHeight="1"/>
+
+
+    <!-- =====================================================
+         MEMORY CONTENT
+         ===================================================== -->
+
+    <VBox spacing="6">
+
+        <Label fx:id="titleLabel"
+               styleClass="memory-heading"
+               wrapText="true"/>
+
+        <Label fx:id="storyLabel"
+               styleClass="memory-story"
+               wrapText="true"
+               maxWidth="900"/>
+
+    </VBox>
+
+
+    <!-- =====================================================
+         DIVIDER
+         ===================================================== -->
+
+    <Region styleClass="divider"
+            minHeight="1"
+            prefHeight="1"
+            maxHeight="1"/>
+
+
+    <!-- =====================================================
+         MEMORY DETAILS
+         ===================================================== -->
+
+    <HBox spacing="20"
+          alignment="CENTER_LEFT">
+
+        <Label fx:id="emotionLabel"
+               styleClass="memory-info"/>
+
+        <Label fx:id="locationLabel"
+               styleClass="memory-info"/>
+
+        <Label fx:id="dateLabel"
+               styleClass="memory-info"/>
+
+    </HBox>
+
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.echoes.echoes.controller.EmotionRowController"
+      spacing="18"
+      alignment="CENTER_LEFT">
+
+    <!-- Emotion -->
+
+    <Label fx:id="emotionLabel"
+           text="😊 Happy"
+           styleClass="emotion-name"/>
+
+    <!-- Progress Bar -->
+
+    <?import javafx.geometry.Pos?>
+
+    <Pane fx:id="track"
+          styleClass="emotion-track"
+          HBox.hgrow="ALWAYS">
+
+        <Region fx:id="progressBar"
+                styleClass="emotion-fill"/>
+    </Pane>
+
+    <!-- Count -->
+
+    <Label fx:id="countLabel"
+           text="8"
+           styleClass="emotion-count"/>
+
+</HBox>

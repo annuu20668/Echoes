@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.echoes.echoes.controller.TimelineController"
+            styleClass="root">
+
+    <center>
+
+        <VBox spacing="20"
+              styleClass="content">
+
+            <padding>
+                <Insets top="30"
+                        right="35"
+                        bottom="30"
+                        left="35"/>
+            </padding>
+
+
+            <!-- ================= BACK ================= -->
+
+            <HBox alignment="CENTER_LEFT">
+
+                <Button text="← Back"
+                        onAction="#handleBack"
+                        styleClass="back-button"/>
+
+            </HBox>
+
+
+            <!-- ================= HEADER ================= -->
+
+            <VBox alignment="CENTER"
+                  spacing="5">
+
+                <Label text="Your Timeline"
+                       styleClass="heading"/>
+
+                <Label text="Your life, remembered through your echoes."
+                       styleClass="subheading"/>
+
+            </VBox>
+
+
+            <!-- ================= TIMELINE ================= -->
+
+            <ScrollPane fitToWidth="true"
+                        hbarPolicy="NEVER"
+                        vbarPolicy="AS_NEEDED"
+                        VBox.vgrow="ALWAYS"
+                        styleClass="timeline-scroll">
+
+                <content>
+
+                    <StackPane alignment="TOP_CENTER"
+                               styleClass="timeline-content">
+
+                        <!-- Central Timeline Line -->
+
+                        <Region styleClass="timeline-line"
+                                prefWidth="2"
+                                maxWidth="2"
+                                minHeight="1400"/>
+
+
+                        <!-- Dynamic Timeline -->
+
+                        <VBox fx:id="timelineContainer"
+                              spacing="25"
+                              alignment="TOP_CENTER">
+
+                            <padding>
+                                <Insets top="25"
+                                        right="10"
+                                        bottom="60"
+                                        left="10"/>
+                            </padding>
+
+                        </VBox>
+
+                    </StackPane>
+
+                </content>
+
+            </ScrollPane>
+
+
+            <!-- ================= EMPTY STATE ================= -->
+
+            <VBox fx:id="emptyState"
+                  alignment="CENTER"
+                  spacing="10"
+                  visible="false"
+                  managed="false">
+
+                <Label text="♫"
+                       styleClass="timeline-empty-icon"/>
+
+                <Label fx:id="emptyLabel"
+                       text="Your timeline is waiting for its first echo."
+                       styleClass="subheading"/>
+
+            </VBox>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.echoes.echoes.controller.DashboardController"
+            styleClass="root">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <left>
+
+        <VBox spacing="15"
+              styleClass="sidebar">
+
+            <padding>
+                <Insets top="30"
+                        right="20"
+                        bottom="30"
+                        left="20"/>
+            </padding>
+
+            <Label text="Echoes"
+                   styleClass="sidebar-title"/>
+
+            <Region styleClass="sidebar-divider"/>
+
+            <Button fx:id="homeButton"
+                    text="Home"
+                    styleClass="sidebar-button"/>
+
+            <Button fx:id="memoriesButton"
+                    text="My Memories"
+                    onAction="#handleMyMemories"
+                    styleClass="sidebar-button"/>
+
+            <Button fx:id="favoritesButton"
+                    text="Favorites"
+                    onAction="#handleFavorites"
+                    styleClass="sidebar-button"/>
+
+            <Button fx:id="timelineButton"
+                    text="Timeline"
+                    onAction="#handleTimeline"
+                    styleClass="sidebar-button"/>
+            <Button fx:id="statisticsButton"
+                    text="Statistics"
+                    onAction="#handleStatistics"
+                    styleClass="sidebar-button"/>
+
+            <Button fx:id="settingsButton"
+                    onAction="#handleSettings"
+                    text="Settings"
+                    styleClass="sidebar-button"/>
+
+            <Region VBox.vgrow="ALWAYS"/>
+
+            <Region styleClass="sidebar-divider"/>
+
+            <Label text="Echoes v1.0"
+                   styleClass="sidebar-footer"/>
+
+        </VBox>
+
+    </left>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <center>
+
+        <ScrollPane fitToWidth="true"
+                    hbarPolicy="NEVER"
+                    style="-fx-background:#0A0A18;">
+
+            <content>
+
+                <VBox spacing="30"
+                      styleClass="content">
+
+                    <padding>
+                        <Insets top="35"
+                                right="35"
+                                bottom="35"
+                                left="35"/>
+                    </padding>
+
+                    <!-- Header -->
+
+                    <VBox spacing="8">
+
+                        <Label fx:id="welcomeLabel"
+                               styleClass="heading"/>
+
+                        <Label text="Every memory has its soundtrack."
+                               styleClass="subheading"/>
+
+                    </VBox>
+
+                    <!-- Search -->
+
+                    <!-- Search -->
+
+                    <HBox spacing="15"
+                          alignment="CENTER_LEFT">
+
+                        <Label text="🔍"
+                               styleClass="search-icon"/>
+
+                        <TextField fx:id="searchField"
+                                   HBox.hgrow="ALWAYS"
+                                   promptText="Search by title, song, artist, emotion, location..."
+                                   styleClass="search-field"/>
+
+                        <Button text="+ New Memory"
+                                onAction="#handleAddMemory"
+                                styleClass="begin-button"/>
+
+                    </HBox>
+
+                    <!-- ================= TODAY'S ECHO ================= -->
+
+                    <VBox spacing="18">
+
+                        <Label text="Today's Echo"
+                               styleClass="section-title"/>
+
+                        <VBox spacing="18"
+                              styleClass="hero-card">
+
+                            <padding>
+                                <Insets top="28" right="28" bottom="28" left="28"/>
+                            </padding>
+
+                            <Label fx:id="latestSongLabel"
+                                   styleClass="hero-song"/>
+
+                            <Label fx:id="latestTitleLabel"
+                                   wrapText="true"
+                                   styleClass="hero-title"/>
+
+                            <Label fx:id="latestStoryLabel"
+                                   wrapText="true"
+                                   styleClass="hero-story"/>
+
+                            <HBox spacing="12"
+                                  alignment="CENTER_LEFT">
+
+                                <Label fx:id="latestEmotionLabel"
+                                       styleClass="hero-badge"/>
+
+                                <Label fx:id="latestLocationLabel"
+                                       styleClass="hero-badge"/>
+
+                                <Label fx:id="latestDateLabel"
+                                       styleClass="hero-badge"/>
+
+                            </HBox>
+
+                            <Button text="Open Memory"
+                                    onAction="#handleOpenLatestMemory"
+                                    styleClass="hero-button"/>
+
+                        </VBox>
+
+                    </VBox>
+
+                    <!-- ================= YOUR ECHOES ================= -->
+
+                    <VBox spacing="15">
+
+                        <Label text="Your Echoes"
+                               styleClass="section-title"/>
+
+                        <FlowPane fx:id="recentMemoriesPane"
+                                  hgap="20"
+                                  vgap="20"
+                                  prefWrapLength="900"/>
+
+                    </VBox>
+
+                </VBox>
+
+            </content>
+
+        </ScrollPane>
+
+    </center>
+
+</BorderPane>

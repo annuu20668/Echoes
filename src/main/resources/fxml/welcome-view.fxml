@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.echoes.echoes.controller.WelcomeController">
+
+    <center>
+
+        <StackPane>
+
+            <!-- =================================================
+                 WELCOME CONTENT
+                 ================================================= -->
+
+            <VBox fx:id="welcomeContent"
+                  alignment="CENTER"
+                  spacing="18">
+
+                <padding>
+                    <Insets top="60"
+                            right="50"
+                            bottom="60"
+                            left="50"/>
+                </padding>
+
+                <!-- Animated Journal -->
+
+                <Label fx:id="journalIcon"
+                       text="📖"
+                       styleClass="welcome-icon"/>
+
+                <Label text="Echoes"
+                       styleClass="welcome-title"/>
+
+                <Label text="Every memory has a soundtrack."
+                       styleClass="welcome-subtitle"/>
+
+                <Label text="Preserve the moments behind every song&#10;and revisit them whenever life plays them again."
+                       wrapText="true"
+                       maxWidth="500"
+                       alignment="CENTER"
+                       textAlignment="CENTER"
+                       styleClass="welcome-description"/>
+
+                <Region prefHeight="15"/>
+
+                <Button fx:id="beginButton"
+                        text="Begin Journey"
+                        onAction="#handleBegin"
+                        styleClass="begin-button"/>
+
+            </VBox>
+
+
+            <!-- =================================================
+                 MUSIC NOTE ANIMATION LAYER
+                 ================================================= -->
+
+            <Pane fx:id="animationLayer"
+                  mouseTransparent="true"
+                  pickOnBounds="false"/>
+
+        </StackPane>
+
+    </center>
+
+</BorderPane>

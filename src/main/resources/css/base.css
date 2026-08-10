@@ -1,0 +1,962 @@
+/* ==========================================================
+   ECHOES DESIGN SYSTEM
+   Base Styles
+   Dark Indigo • Lavender • Soft Glow
+   ========================================================== */
+
+
+/* ==========================================================
+   ROOT
+   ========================================================== */
+
+.root {
+    -fx-background-color: #0A0A18;
+    -fx-font-family: "Segoe UI";
+}
+
+
+/* ==========================================================
+   WELCOME SCREEN
+   ========================================================== */
+
+.title {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.subtitle {
+    -fx-font-size: 18px;
+    -fx-text-fill: #A8AEC3;
+}
+
+.icon {
+    -fx-font-size: 42px;
+}
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.begin-button {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #9B8AFB,
+                    #8170E5
+            );
+
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 30;
+    -fx-padding: 10 30;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.32),
+                    14,
+                    0.22,
+                    0,
+                    3
+            );
+}
+
+.begin-button:hover {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #B09EFF,
+                    #9180F0
+            );
+
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(176,158,255,0.50),
+                    18,
+                    0.28,
+                    0,
+                    4
+            );
+}
+
+.begin-button:pressed {
+    -fx-background-color: #7565D0;
+
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+   ========================================================== */
+
+.primary-button {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #9B8AFB,
+                    #8170E5
+            );
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 14;
+    -fx-padding: 10 20;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.30),
+                    12,
+                    0.20,
+                    0,
+                    3
+            );
+}
+
+.primary-button:hover {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #B09EFF,
+                    #9180F0
+            );
+
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(176,158,255,0.46),
+                    16,
+                    0.25,
+                    0,
+                    4
+            );
+}
+
+.primary-button:pressed {
+    -fx-background-color: #7565D0;
+
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+
+/* ==========================================================
+   SIDEBAR
+   ========================================================== */
+
+.sidebar {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom,
+                    #15152A,
+                    #111122
+            );
+
+    -fx-background-radius: 30;
+
+    -fx-pref-width: 220;
+
+    -fx-border-radius: 30;
+
+    -fx-border-color: #26264A;
+    -fx-border-width: 1;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.30),
+                    22,
+                    0.20,
+                    0,
+                    7
+            );
+}
+
+.sidebar-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #B09EFF;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #D8D8E8;
+
+    -fx-font-size: 15px;
+    -fx-font-weight: normal;
+
+    -fx-alignment: CENTER_LEFT;
+
+    -fx-background-radius: 12;
+
+    -fx-padding: 10 12;
+
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(155,138,251,0.10);
+
+    -fx-text-fill: #B09EFF;
+}
+
+.sidebar-button:pressed {
+    -fx-background-color: rgba(155,138,251,0.16);
+}
+
+.sidebar-footer {
+    -fx-text-fill: #6F7592;
+    -fx-font-size: 12px;
+}
+
+
+/* ==========================================================
+   NAV ITEM
+   ========================================================== */
+
+.nav-item {
+    -fx-font-size: 16px;
+    -fx-text-fill: #D8D8E8;
+    -fx-cursor: hand;
+}
+
+.nav-item:hover {
+    -fx-text-fill: #B09EFF;
+}
+
+
+/* ==========================================================
+   CONTENT
+   ========================================================== */
+
+.content {
+    -fx-background-color: #0A0A18;
+    -fx-padding: 40;
+}
+
+.heading {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.subheading {
+    -fx-font-size: 15px;
+    -fx-text-fill: #A8AEC3;
+}
+
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+
+/* ==========================================================
+   SEARCH FIELD
+   ========================================================== */
+
+.search-field {
+    -fx-background-color: #15152A;
+
+    -fx-text-fill: #F8F8FA;
+    -fx-prompt-text-fill: #858BA6;
+
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+
+    -fx-border-color: #2A2D45;
+    -fx-border-width: 1;
+
+    -fx-padding: 10 16;
+
+    -fx-pref-width: 250;
+
+    -fx-font-size: 14px;
+}
+
+.search-field:hover {
+    -fx-border-color: rgba(155,138,251,0.35);
+}
+
+.search-field:focused {
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    10,
+                    0.18,
+                    0,
+                    0
+            );
+}
+
+
+/* ==========================================================
+   MEMORY SCROLL PANE
+   ========================================================== */
+
+.memory-scroll-pane {
+    -fx-background-color: #0A0A18;
+    -fx-background: #0A0A18;
+
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.memory-scroll-pane .viewport {
+    -fx-background-color: #0A0A18;
+}
+
+.memory-scroll-pane .content {
+    -fx-background-color: #0A0A18;
+}
+
+.memory-scroll-pane > .corner {
+    -fx-background-color: #0A0A18;
+}
+
+
+/* ==========================================================
+   MEMORY SCROLLBAR
+   ========================================================== */
+
+.memory-scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10;
+}
+
+.memory-scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0;
+}
+
+.memory-scroll-pane .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.memory-scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #343456;
+    -fx-background-radius: 10;
+}
+
+.memory-scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #6256A0;
+}
+
+.memory-scroll-pane .increment-button,
+.memory-scroll-pane .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+
+/* ==========================================================
+   MEMORIES CONTAINER
+   ========================================================== */
+
+.memories-container {
+    -fx-background-color: transparent;
+    -fx-padding: 2 4 20 2;
+}
+
+
+/* ==========================================================
+   MEMORY CARDS
+   ========================================================== */
+
+.memory-card {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #19192E,
+                    #151527
+            );
+
+    -fx-background-radius: 18;
+
+    -fx-border-color:
+            rgba(155,138,251,0.15);
+
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.28),
+                    16,
+                    0.18,
+                    0,
+                    5
+            );
+}
+
+.memory-card:hover {
+    -fx-background-color: #1D1D35;
+
+    -fx-border-color:
+            rgba(155,138,251,0.38);
+
+    -fx-translate-y: -2;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.16),
+                    18,
+                    0.20,
+                    0,
+                    6
+            );
+}
+
+
+/* ==========================================================
+   MEMORY SONG
+   ========================================================== */
+
+.memory-song {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #B09EFF;
+}
+
+.memory-info {
+    -fx-font-size: 13px;
+    -fx-text-fill: #9298B0;
+}
+
+
+/* ==========================================================
+   MEMORY TITLE
+   ========================================================== */
+
+.memory-heading {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #F8F8FA;
+}
+
+
+/* ==========================================================
+   MEMORY STORY
+   ========================================================== */
+
+.memory-story {
+    -fx-font-size: 14px;
+
+    -fx-text-fill: #B8BCD0;
+
+    -fx-line-spacing: 3;
+
+    -fx-wrap-text: true;
+}
+
+
+/* ==========================================================
+   MEMORY DIVIDER
+   ========================================================== */
+
+.divider {
+    -fx-background-color: #292942;
+    -fx-opacity: 0.75;
+}
+
+
+/* ==========================================================
+   LEGACY MEMORY CLASSES
+   ========================================================== */
+
+.memory-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.memory-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: #B0B0C5;
+    -fx-wrap-text: true;
+}
+
+
+/* ==========================================================
+   REUSABLE GLASS CARD
+   ========================================================== */
+
+.glass-card {
+    -fx-background-color:
+            rgba(255,255,255,0.05);
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color:
+            rgba(155,138,251,0.14);
+
+    -fx-border-width: 1;
+
+    -fx-padding: 20;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.20),
+                    16,
+                    0.15,
+                    0,
+                    5
+            );
+}
+
+.glass-card:hover {
+    -fx-border-color:
+            rgba(155,138,251,0.30);
+}
+
+
+/* ==========================================================
+   GENERAL TEXT
+   ========================================================== */
+
+.muted-text {
+    -fx-text-fill: #7D86A7;
+    -fx-font-size: 13px;
+}
+
+.accent-text {
+    -fx-text-fill: #B09EFF;
+    -fx-font-weight: bold;
+}
+
+.magenta-text {
+    -fx-text-fill: #D96BAA;
+    -fx-font-weight: bold;
+}
+
+
+/* ==========================================================
+   GENERAL BUTTON
+   ========================================================== */
+
+.button {
+    -fx-cursor: hand;
+}
+
+
+/* ==========================================================
+   BACK BUTTON
+   ========================================================== */
+
+.back-button {
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 14px;
+
+    -fx-padding: 8 12;
+
+    -fx-background-radius: 10;
+
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: rgba(155,138,251,0.10);
+
+    -fx-text-fill: #C2B5FF;
+}
+
+.back-button:pressed {
+    -fx-background-color: rgba(155,138,251,0.16);
+}
+
+
+/* ==========================================================
+   EMPTY STATE
+   ========================================================== */
+
+.empty-state {
+    -fx-text-fill: #858BA6;
+
+    -fx-font-size: 15px;
+
+    -fx-padding: 30 0 30 5;
+}
+
+
+/* ==========================================================
+   TIMELINE
+   ========================================================== */
+
+
+/* ==========================================================
+   TIMELINE SCROLL AREA
+   ========================================================== */
+
+.timeline-scroll {
+    -fx-background-color: #0A0A18;
+    -fx-background: #0A0A18;
+
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+}
+
+.timeline-scroll .viewport {
+    -fx-background-color: #0A0A18;
+}
+
+.timeline-scroll .content {
+    -fx-background-color: #0A0A18;
+}
+
+.timeline-scroll > .corner {
+    -fx-background-color: #0A0A18;
+}
+
+
+/* ==========================================================
+   TIMELINE CONTENT
+   ========================================================== */
+
+.timeline-content {
+    -fx-background-color: #0A0A18;
+
+    -fx-padding: 5 0 30 0;
+}
+
+
+/* ==========================================================
+   CENTRAL TIMELINE LINE
+   ========================================================== */
+
+.timeline-line {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom,
+                    transparent,
+                    #4D4675,
+                    #9B8AFB,
+                    #4D4675,
+                    transparent
+            );
+
+    -fx-opacity: 0.70;
+}
+
+
+/* ==========================================================
+   TIMELINE YEAR
+   ========================================================== */
+
+.timeline-year {
+    -fx-background-color: #17172A;
+
+    -fx-background-radius: 20;
+
+    -fx-border-radius: 20;
+
+    -fx-border-color: #39345C;
+
+    -fx-border-width: 1;
+
+    -fx-padding: 7 18;
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.16),
+                    12,
+                    0.18,
+                    0,
+                    2
+            );
+}
+
+
+/* ==========================================================
+   TIMELINE DOT
+   ========================================================== */
+
+.timeline-dot {
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 15px;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(176,158,255,0.45),
+                    12,
+                    0.25,
+                    0,
+                    0
+            );
+}
+
+
+/* ==========================================================
+   TIMELINE CONNECTOR
+   ========================================================== */
+
+.timeline-connector {
+    -fx-background-color: #4A4568;
+
+    -fx-background-radius: 2;
+}
+
+
+/* ==========================================================
+   TIMELINE CARDS
+   ========================================================== */
+
+.timeline-card {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #17172A,
+                    #131326
+            );
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color:
+            rgba(155,138,251,0.20);
+
+    -fx-border-width: 1;
+
+    -fx-padding: 18;
+
+    -fx-pref-width: 330;
+
+    -fx-min-width: 300;
+
+    -fx-max-width: 350;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.28),
+                    18,
+                    0.18,
+                    0,
+                    5
+            );
+}
+
+
+/* ==========================================================
+   TIMELINE CARD HOVER
+   ========================================================== */
+
+.timeline-card:hover {
+    -fx-background-color: #1B1B32;
+
+    -fx-border-color:
+            rgba(155,138,251,0.48);
+
+    -fx-translate-y: -2;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    20,
+                    0.22,
+                    0,
+                    6
+            );
+}
+
+
+/* ==========================================================
+   TIMELINE DATE
+   ========================================================== */
+
+.timeline-date {
+    -fx-text-fill: #8F95B6;
+
+    -fx-font-size: 12px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* ==========================================================
+   TIMELINE SONG
+   ========================================================== */
+
+.timeline-song {
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 15px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* ==========================================================
+   TIMELINE ARTIST
+   ========================================================== */
+
+.timeline-artist {
+    -fx-text-fill: #8F95B6;
+
+    -fx-font-size: 12px;
+}
+
+
+/* ==========================================================
+   TIMELINE MEMORY TITLE
+   ========================================================== */
+
+.timeline-title {
+    -fx-text-fill: #F8F8FA;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* ==========================================================
+   TIMELINE STORY
+   ========================================================== */
+
+.timeline-story {
+    -fx-text-fill: #B8B8C8;
+
+    -fx-font-size: 13px;
+
+    -fx-line-spacing: 2;
+}
+
+
+/* ==========================================================
+   TIMELINE INFO
+   ========================================================== */
+
+.timeline-info {
+    -fx-text-fill: #8F95B6;
+
+    -fx-font-size: 12px;
+}
+
+
+/* ==========================================================
+   TIMELINE EMPTY STATE
+   ========================================================== */
+
+.timeline-empty-icon {
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 38px;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.25),
+                    14,
+                    0.20,
+                    0,
+                    2
+            );
+}
+
+
+/* ==========================================================
+   TIMELINE SCROLLBAR
+   ========================================================== */
+
+.timeline-scroll .scroll-bar:vertical {
+    -fx-background-color: transparent;
+
+    -fx-pref-width: 10;
+}
+
+.timeline-scroll .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+
+    -fx-pref-height: 0;
+}
+
+.timeline-scroll .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.timeline-scroll .scroll-bar .thumb {
+    -fx-background-color: #343456;
+
+    -fx-background-radius: 10;
+}
+
+.timeline-scroll .scroll-bar .thumb:hover {
+    -fx-background-color: #6256A0;
+}
+
+.timeline-scroll .increment-button,
+.timeline-scroll .decrement-button {
+    -fx-background-color: transparent;
+
+    -fx-padding: 0;
+}
+
+
+/* ==========================================================
+   FOCUS CLEANUP
+   ========================================================== */
+
+.button:focused,
+.text-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+/* ==========================================================
+   END OF ECHOES DESIGN SYSTEM
+   ========================================================== */

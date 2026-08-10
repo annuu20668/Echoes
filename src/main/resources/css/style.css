@@ -1,0 +1,1795 @@
+/* =========================================================
+   ECHOES
+   FINAL STYLE SYSTEM
+   Dark Indigo • Lavender • Soft Glow • Premium
+========================================================= */
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+.root {
+    -fx-background-color: #0A0A18;
+    -fx-font-family: "Segoe UI";
+}
+
+
+/* =========================================================
+   MAIN COLORS
+
+   Background:       #0A0A18
+   Surface:          #121225
+   Card:             #17172A
+
+   Primary:          #9B8AFB
+   Primary Hover:    #B09EFF
+   Primary Dark:     #7565D0
+
+   Cyan Accent:      #00D9E8
+   Pink Accent:      #D96BAA
+
+   Main Text:        #F8F8FA
+   Secondary Text:   #A8AEC3
+   Muted Text:       #7D86A7
+
+   Border:            #2A2D45
+========================================================= */
+
+
+/* =========================================================
+   GENERAL TYPOGRAPHY
+========================================================= */
+
+.title {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.subtitle {
+    -fx-font-size: 18px;
+    -fx-text-fill: #A8AEC3;
+}
+
+.heading {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.subheading {
+    -fx-font-size: 16px;
+    -fx-text-fill: #A8AEC3;
+}
+
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.page-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.page-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #A8AEC3;
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.welcome-icon {
+    -fx-font-size: 90px;
+}
+
+.welcome-title {
+    -fx-font-size: 56px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.welcome-subtitle {
+    -fx-font-size: 22px;
+    -fx-text-fill: #B09EFF;
+}
+
+.welcome-description {
+    -fx-font-size: 16px;
+    -fx-text-fill: #A8AEC3;
+    -fx-line-spacing: 4;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.begin-button,
+.hero-button,
+.save-memory-button,
+.save-button,
+.settings-save-button {
+
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #9B8AFB,
+                    #8170E5
+            );
+
+    -fx-background-radius: 15;
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.32),
+                    14,
+                    0.22,
+                    0,
+                    3
+            );
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON SIZES
+========================================================= */
+
+.begin-button {
+    -fx-font-size: 15px;
+    -fx-padding: 12 25;
+}
+
+.hero-button {
+    -fx-font-size: 14px;
+    -fx-padding: 10 26;
+}
+
+.save-memory-button,
+.save-button {
+    -fx-font-size: 15px;
+    -fx-padding: 13 28;
+}
+
+.settings-save-button {
+    -fx-font-size: 14px;
+    -fx-padding: 11 20;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON HOVER
+========================================================= */
+
+.begin-button:hover,
+.hero-button:hover,
+.save-memory-button:hover,
+.save-button:hover,
+.settings-save-button:hover {
+
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #B09EFF,
+                    #9180F0
+            );
+
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(176,158,255,0.50),
+                    18,
+                    0.28,
+                    0,
+                    4
+            );
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON PRESSED
+========================================================= */
+
+.begin-button:pressed,
+.hero-button:pressed,
+.save-memory-button:pressed,
+.save-button:pressed,
+.settings-save-button:pressed {
+
+    -fx-background-color: #7565D0;
+
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.24),
+                    8,
+                    0.15,
+                    0,
+                    2
+            );
+}
+
+
+/* =========================================================
+   SECONDARY / GLASS BUTTON
+========================================================= */
+
+.glass-button {
+
+    -fx-background-color:
+            rgba(28,28,49,0.88);
+
+    -fx-background-radius: 14;
+
+    -fx-border-color: #7568B7;
+
+    -fx-border-radius: 14;
+
+    -fx-border-width: 1;
+
+    -fx-text-fill: #E8E4FF;
+
+    -fx-padding: 10 20;
+
+    -fx-cursor: hand;
+}
+
+.glass-button:hover {
+
+    -fx-background-color:
+            rgba(155,138,251,0.10);
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-text-fill: white;
+}
+
+.glass-button:pressed {
+
+    -fx-background-color:
+            rgba(155,138,251,0.18);
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    -fx-pref-width: 240;
+
+    -fx-padding: 28;
+
+    -fx-spacing: 12;
+
+    -fx-background-color:
+            linear-gradient(
+                    to bottom,
+                    #15152A,
+                    #111122
+            );
+
+    -fx-background-radius: 24;
+
+    -fx-border-color: #26264A;
+
+    -fx-border-width: 1;
+
+    -fx-border-radius: 24;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.35),
+                    25,
+                    0.20,
+                    0,
+                    8
+            );
+}
+
+.sidebar-title {
+
+    -fx-font-size: 24px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #F8F8FA;
+
+    -fx-padding: 0 0 8 0;
+}
+
+.sidebar-divider {
+
+    -fx-pref-height: 1;
+
+    -fx-max-height: 1;
+
+    -fx-background-color: #2E2E4E;
+
+    -fx-opacity: 0.9;
+}
+
+.sidebar-button {
+
+    -fx-background-color: transparent;
+
+    -fx-background-radius: 14;
+
+    -fx-text-fill: #C9D1F5;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: 600;
+
+    -fx-padding: 14 18;
+
+    -fx-alignment: CENTER_LEFT;
+
+    -fx-cursor: hand;
+
+    -fx-border-color: transparent;
+
+    -fx-border-radius: 14;
+
+    -fx-border-width: 1;
+}
+
+.sidebar-button:hover {
+
+    -fx-background-color:
+            rgba(155,138,251,0.10);
+
+    -fx-text-fill: #F8F8FA;
+
+    -fx-border-color:
+            rgba(155,138,251,0.35);
+}
+
+.sidebar-button:pressed {
+
+    -fx-background-color:
+            rgba(155,138,251,0.18);
+}
+
+.sidebar-button-active {
+
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    rgba(155,138,251,0.17),
+                    rgba(155,138,251,0.06)
+            );
+
+    -fx-text-fill: #FFFFFF;
+
+    -fx-border-color:
+            rgba(155,138,251,0.45);
+}
+
+.sidebar-footer {
+
+    -fx-text-fill: #7D86A7;
+
+    -fx-font-size: 11px;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.content {
+    -fx-padding: 40;
+}
+
+
+/* =========================================================
+   GLASS PANELS
+========================================================= */
+
+.glass-panel {
+
+    -fx-background-color:
+            rgba(23,23,42,0.72);
+
+    -fx-background-radius: 24;
+
+    -fx-border-color:
+            rgba(139,169,255,0.18);
+
+    -fx-border-radius: 24;
+
+    -fx-border-width: 1;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.25),
+                    20,
+                    0.18,
+                    0,
+                    6
+            );
+}
+
+.glass-card {
+
+    -fx-background-color:
+            rgba(23,23,42,0.82);
+
+    -fx-background-radius: 20;
+
+    -fx-border-color:
+            rgba(139,169,255,0.15);
+
+    -fx-border-radius: 20;
+
+    -fx-border-width: 1;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-icon {
+
+    -fx-font-size: 20px;
+
+    -fx-text-fill: #B09EFF;
+}
+
+.search-field {
+
+    -fx-background-color: #121225;
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #8F8FA8;
+
+    -fx-background-radius: 14;
+
+    -fx-border-radius: 14;
+
+    -fx-border-color: #2A2A4A;
+
+    -fx-border-width: 1;
+
+    -fx-padding: 11 16;
+
+    -fx-font-size: 14px;
+}
+
+.search-field:focused {
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.22),
+                    10,
+                    0.18,
+                    0,
+                    0
+            );
+}
+
+
+/* =========================================================
+   MODERN TEXT FIELD
+========================================================= */
+
+.modern-field {
+
+    -fx-pref-height: 45;
+
+    -fx-background-color: #171C31;
+
+    -fx-background-radius: 12;
+
+    -fx-border-radius: 12;
+
+    -fx-border-color: #252C4A;
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #8087A3;
+
+    -fx-font-size: 15px;
+
+    -fx-padding: 0 15;
+}
+
+.modern-field:focused {
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    10,
+                    0.18,
+                    0,
+                    0
+            );
+}
+
+
+/* =========================================================
+   TEXT AREA
+========================================================= */
+
+.text-area {
+
+    -fx-background-color: #121225;
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #8F8FA8;
+
+    -fx-border-color: #2A2A4A;
+
+    -fx-border-radius: 14;
+
+    -fx-background-radius: 14;
+}
+
+.text-area .content {
+
+    -fx-background-color: #121225;
+
+    -fx-background-radius: 14;
+}
+
+.text-area:focused {
+
+    -fx-border-color: #9B8AFB;
+}
+
+.text-area:focused .content {
+
+    -fx-background-color: #121225;
+}
+
+
+/* =========================================================
+   ADD MEMORY PAGE
+========================================================= */
+
+.add-memory-scroll {
+
+    -fx-background-color: transparent;
+
+    -fx-background: transparent;
+
+    -fx-border-color: transparent;
+}
+
+.add-memory-scroll > .viewport {
+
+    -fx-background-color: transparent;
+}
+
+.add-memory-container {
+
+    -fx-padding: 25 35 35 35;
+}
+
+.add-memory-card {
+
+    -fx-background-color:
+            rgba(23,23,42,0.90);
+
+    -fx-background-radius: 24;
+
+    -fx-border-color:
+            rgba(155,138,251,0.20);
+
+    -fx-border-radius: 24;
+
+    -fx-border-width: 1;
+
+    -fx-padding: 28;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.30),
+                    20,
+                    0.20,
+                    0,
+                    6
+            );
+}
+
+
+/* =========================================================
+   ADD MEMORY INPUTS
+========================================================= */
+
+.glass-text-area {
+
+    -fx-background-color:
+            rgba(24,24,44,0.80);
+
+    -fx-background-radius: 16;
+
+    -fx-border-color: #2A2D45;
+
+    -fx-border-radius: 16;
+
+    -fx-border-width: 1;
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #8D93A8;
+}
+
+.glass-text-area:focused {
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.18),
+                    9,
+                    0.16,
+                    0,
+                    0
+            );
+}
+
+.glass-combo {
+
+    -fx-background-color:
+            rgba(24,24,44,0.80);
+
+    -fx-background-radius: 16;
+
+    -fx-border-color: #2A2D45;
+
+    -fx-border-radius: 16;
+
+    -fx-border-width: 1;
+
+    -fx-text-fill: white;
+}
+
+.glass-combo:focused {
+
+    -fx-border-color: #9B8AFB;
+}
+
+.glass-date-picker {
+
+    -fx-background-color:
+            rgba(24,24,44,0.80);
+
+    -fx-background-radius: 16;
+
+    -fx-border-color: #2A2D45;
+
+    -fx-border-radius: 16;
+
+    -fx-border-width: 1;
+}
+
+
+/* =========================================================
+   MUSIC SEARCH RESULTS
+   Smaller so Save Memory remains accessible
+========================================================= */
+
+.spotify-results-list {
+
+    -fx-pref-height: 120px;
+
+    -fx-min-height: 0;
+
+    -fx-max-height: 160px;
+
+    -fx-background-color: #121225;
+
+    -fx-background-radius: 14;
+
+    -fx-border-color: #2A2A4A;
+
+    -fx-border-radius: 14;
+
+    -fx-border-width: 1;
+}
+
+.spotify-results-list .list-cell {
+
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #D9DCEA;
+
+    -fx-padding: 9 14;
+}
+
+.spotify-results-list .list-cell:hover {
+
+    -fx-background-color:
+            rgba(155,138,251,0.08);
+
+    -fx-text-fill: white;
+}
+
+.spotify-results-list .list-cell:selected {
+
+    -fx-background-color:
+            rgba(155,138,251,0.16);
+
+    -fx-text-fill: #B09EFF;
+}
+
+
+/* =========================================================
+   MEMORY CARD
+========================================================= */
+
+.memory-card {
+
+    -fx-background-color:
+            rgba(23,23,42,0.88);
+
+    -fx-background-radius: 22;
+
+    -fx-border-color:
+            rgba(139,169,255,0.16);
+
+    -fx-border-width: 1;
+
+    -fx-border-radius: 22;
+
+    -fx-padding: 22;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.30),
+                    20,
+                    0.20,
+                    0,
+                    6
+            );
+}
+
+.memory-card:hover {
+
+    -fx-background-color:
+            rgba(29,29,51,0.96);
+
+    -fx-border-color:
+            rgba(155,138,251,0.48);
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    18,
+                    0.20,
+                    0,
+                    7
+            );
+
+    -fx-scale-x: 1.015;
+
+    -fx-scale-y: 1.015;
+}
+
+.memory-song {
+
+    -fx-font-size: 20px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #B09EFF;
+}
+
+.memory-heading {
+
+    -fx-font-size: 24px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #F8F8FA;
+}
+
+.memory-story {
+
+    -fx-font-size: 15px;
+
+    -fx-text-fill: #D9DCEA;
+
+    -fx-wrap-text: true;
+}
+
+.memory-info {
+
+    -fx-font-size: 14px;
+
+    -fx-text-fill: #A8AEC3;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider {
+
+    -fx-background-color: #2A2D45;
+
+    -fx-pref-height: 1;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.modern-link {
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-border-color: transparent;
+
+    -fx-font-size: 14px;
+
+    -fx-cursor: hand;
+}
+
+.modern-link:hover {
+
+    -fx-text-fill: #D0C7FF;
+}
+
+
+/* =========================================================
+   SETTINGS
+========================================================= */
+
+.settings-root {
+
+    -fx-background-color: #0A0A18;
+}
+
+.settings-content {
+
+    -fx-background-color: transparent;
+}
+
+.settings-title {
+
+    -fx-font-size: 34px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #F8F8FA;
+}
+
+.settings-subtitle {
+
+    -fx-font-size: 15px;
+
+    -fx-text-fill: #8F96B0;
+}
+
+.settings-card {
+
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    rgba(23,23,42,0.95),
+                    rgba(17,17,34,0.95)
+            );
+
+    -fx-background-radius: 20;
+
+    -fx-border-color:
+            rgba(139,169,255,0.15);
+
+    -fx-border-width: 1;
+
+    -fx-border-radius: 20;
+
+    -fx-padding: 24;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.28),
+                    20,
+                    0.18,
+                    0,
+                    6
+            );
+}
+
+.settings-card:hover {
+
+    -fx-border-color:
+            rgba(155,138,251,0.25);
+}
+
+.settings-section-title {
+
+    -fx-font-size: 19px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #F8F8FA;
+}
+
+.settings-label {
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #A8AEC3;
+}
+
+.settings-field {
+
+    -fx-pref-height: 44;
+
+    -fx-background-color: #121225;
+
+    -fx-background-radius: 12;
+
+    -fx-border-color: #2A2D45;
+
+    -fx-border-radius: 12;
+
+    -fx-border-width: 1;
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #737A94;
+
+    -fx-padding: 0 14;
+
+    -fx-font-size: 14px;
+}
+
+.settings-field:hover {
+
+    -fx-border-color:
+            rgba(155,138,251,0.40);
+}
+
+.settings-field:focused {
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    9,
+                    0.16,
+                    0,
+                    0
+            );
+}
+
+.settings-status {
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: bold;
+}
+
+.settings-description {
+
+    -fx-text-fill: #8F96B0;
+
+    -fx-font-size: 13px;
+
+    -fx-line-spacing: 2;
+}
+
+.settings-logout-button {
+
+    -fx-background-color:
+            rgba(217,107,170,0.07);
+
+    -fx-background-radius: 12;
+
+    -fx-border-color:
+            rgba(217,107,170,0.35);
+
+    -fx-border-radius: 12;
+
+    -fx-border-width: 1;
+
+    -fx-text-fill: #D98AB7;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: bold;
+
+    -fx-padding: 10 22;
+
+    -fx-cursor: hand;
+}
+
+.settings-logout-button:hover {
+
+    -fx-background-color:
+            rgba(217,107,170,0.14);
+
+    -fx-border-color: #D96BAA;
+
+    -fx-text-fill: white;
+}
+
+
+/* =========================================================
+   COMBO BOX
+========================================================= */
+
+.combo-box {
+
+    -fx-background-color: #121225;
+
+    -fx-background-radius: 12;
+
+    -fx-border-color: #2A2D45;
+
+    -fx-border-radius: 12;
+
+    -fx-border-width: 1;
+
+    -fx-text-fill: white;
+}
+
+.combo-box:hover {
+
+    -fx-border-color:
+            rgba(155,138,251,0.40);
+}
+
+.combo-box:focused {
+
+    -fx-border-color: #9B8AFB;
+}
+
+.combo-box .list-cell {
+
+    -fx-background-color: #121225;
+
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+
+    -fx-background-color: #121225;
+
+    -fx-border-color: #2A2D45;
+}
+
+.combo-box-popup .list-cell:hover {
+
+    -fx-background-color:
+            rgba(155,138,251,0.10);
+
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-cell:selected {
+
+    -fx-background-color:
+            rgba(155,138,251,0.16);
+
+    -fx-text-fill: #B09EFF;
+}
+
+
+/* =========================================================
+   DATE PICKER
+========================================================= */
+
+.date-picker {
+
+    -fx-background-color: #121225;
+
+    -fx-background-radius: 12;
+
+    -fx-border-color: #2A2D45;
+
+    -fx-border-radius: 12;
+
+    -fx-border-width: 1;
+}
+
+.date-picker:hover {
+
+    -fx-border-color:
+            rgba(155,138,251,0.40);
+}
+
+.date-picker:focused {
+
+    -fx-border-color: #9B8AFB;
+}
+
+.date-picker .text-field {
+
+    -fx-background-color: transparent;
+
+    -fx-text-fill: white;
+}
+
+.date-picker-popup {
+
+    -fx-background-color: #121225;
+
+    -fx-border-color: #2A2D45;
+}
+
+.date-picker-popup .month-year-pane {
+
+    -fx-background-color: #17172A;
+}
+
+.date-picker-popup .day-cell {
+
+    -fx-background-color: #121225;
+
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .day-cell:hover {
+
+    -fx-background-color:
+            rgba(155,138,251,0.12);
+}
+
+.date-picker-popup .day-cell:selected {
+
+    -fx-background-color: #9B8AFB;
+
+    -fx-text-fill: #0A0A18;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline-scroll {
+
+    -fx-background-color: transparent;
+
+    -fx-background: transparent;
+
+    -fx-border-color: transparent;
+}
+
+.timeline-scroll > .viewport {
+
+    -fx-background-color: #0A0A18;
+}
+
+.timeline-line {
+
+    -fx-background-color: #7568B7;
+
+    -fx-opacity: 0.55;
+}
+
+.timeline-year {
+
+    -fx-font-size: 24px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #C0B4FF;
+
+    -fx-background-color: #0A0A18;
+
+    -fx-padding: 8 18;
+}
+
+.timeline-dot {
+
+    -fx-font-size: 22px;
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-background-color: #0A0A18;
+}
+
+.timeline-connector {
+
+    -fx-background-color: #7568B7;
+}
+
+.timeline-card {
+
+    -fx-background-color: #121225;
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color:
+            rgba(155,138,251,0.20);
+
+    -fx-border-width: 1;
+
+    -fx-padding: 20;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.40),
+                    18,
+                    0.25,
+                    0,
+                    6
+            );
+}
+
+.timeline-card:hover {
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-translate-y: -3;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    18,
+                    0.20,
+                    0,
+                    5
+            );
+}
+
+.timeline-date {
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #D08BB3;
+}
+
+.timeline-song {
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #B09EFF;
+}
+
+.timeline-artist {
+
+    -fx-font-size: 13px;
+
+    -fx-text-fill: #9A9AB5;
+}
+
+.timeline-title {
+
+    -fx-font-size: 17px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: white;
+}
+
+.timeline-story {
+
+    -fx-font-size: 14px;
+
+    -fx-text-fill: #D0D0DD;
+}
+
+.timeline-info {
+
+    -fx-font-size: 13px;
+
+    -fx-text-fill: #AFAFC5;
+}
+
+.timeline-empty-icon {
+
+    -fx-font-size: 42px;
+
+    -fx-text-fill: #B09EFF;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stat-card {
+
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #15152A,
+                    #111122
+            );
+
+    -fx-background-radius: 20;
+
+    -fx-border-radius: 20;
+
+    -fx-border-color:
+            rgba(155,138,251,0.18);
+
+    -fx-padding: 25;
+
+    -fx-pref-width: 220;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.28),
+                    18,
+                    0.18,
+                    0,
+                    5
+            );
+}
+
+.stat-card:hover {
+
+    -fx-border-color:
+            rgba(155,138,251,0.45);
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.18),
+                    18,
+                    0.20,
+                    0,
+                    5
+            );
+
+    -fx-translate-y: -2;
+}
+
+.stat-title {
+
+    -fx-font-size: 16px;
+
+    -fx-text-fill: #8F8FA8;
+
+    -fx-font-weight: bold;
+}
+
+.stat-value {
+
+    -fx-font-size: 42px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #B09EFF;
+}
+
+
+/* =========================================================
+   EMOTION STATISTICS
+========================================================= */
+
+.emotion-name {
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 16px;
+
+    -fx-pref-width: 170;
+}
+
+.emotion-track {
+
+    -fx-background-color: #1B1B33;
+
+    -fx-background-radius: 10;
+
+    -fx-pref-height: 16;
+
+    -fx-pref-width: 420;
+}
+
+.emotion-fill {
+
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #9B8AFB,
+                    #B09EFF
+            );
+
+    -fx-background-radius: 10;
+
+    -fx-pref-height: 16;
+}
+
+.emotion-count {
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+}
+
+.emotion-card-emoji {
+
+    -fx-font-size: 24px;
+}
+
+.emotion-card-name {
+
+    -fx-font-size: 20px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-alignment: center;
+}
+
+
+/* =========================================================
+   CALENDAR
+========================================================= */
+
+.calendar-header {
+
+    -fx-text-fill: #B0B3C7;
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: bold;
+
+    -fx-padding: 0 0 10 0;
+}
+
+.calendar-cell {
+
+    -fx-pref-width: 24;
+
+    -fx-pref-height: 24;
+
+    -fx-min-width: 24;
+
+    -fx-min-height: 24;
+
+    -fx-max-width: 24;
+
+    -fx-max-height: 24;
+
+    -fx-alignment: center;
+
+    -fx-background-color: #1B1B33;
+
+    -fx-background-radius: 5;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 11px;
+}
+
+.calendar-cell-active {
+
+    -fx-background-color: #9B8AFB;
+
+    -fx-text-fill: #0A0A18;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 5;
+}
+
+.calendar-legend-empty {
+
+    -fx-pref-width: 14;
+
+    -fx-pref-height: 14;
+
+    -fx-background-color: #1B1B33;
+
+    -fx-background-radius: 3;
+}
+
+.calendar-legend-active {
+
+    -fx-pref-width: 14;
+
+    -fx-pref-height: 14;
+
+    -fx-background-color: #9B8AFB;
+
+    -fx-background-radius: 3;
+}
+
+.calendar-legend-text {
+
+    -fx-text-fill: #B0B3C7;
+
+    -fx-font-size: 12px;
+}
+
+.calendar-description {
+
+    -fx-text-fill: #8E93A8;
+
+    -fx-font-size: 13px;
+
+    -fx-font-style: italic;
+}
+
+
+/* =========================================================
+   SCROLL BARS
+========================================================= */
+
+.scroll-bar {
+
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+
+    -fx-background-color:
+            rgba(18,18,37,0.65);
+
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb {
+
+    -fx-background-color:
+            rgba(139,169,255,0.30);
+
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb:hover {
+
+    -fx-background-color:
+            rgba(155,138,251,0.48);
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+
+    -fx-background-color: transparent;
+
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+
+    -fx-background-color: transparent;
+}
+
+
+/* =========================================================
+   LIST VIEW
+========================================================= */
+
+.list-view {
+
+    -fx-background-color: #121225;
+
+    -fx-border-color: #2A2D45;
+
+    -fx-border-radius: 14;
+
+    -fx-background-radius: 14;
+}
+
+.list-view .list-cell {
+
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #D9DCEA;
+}
+
+.list-view .list-cell:hover {
+
+    -fx-background-color:
+            rgba(155,138,251,0.08);
+}
+
+.list-view .list-cell:selected {
+
+    -fx-background-color:
+            rgba(155,138,251,0.15);
+
+    -fx-text-fill: #B09EFF;
+}
+
+
+/* =========================================================
+   EMPTY STATES
+========================================================= */
+
+.empty-state {
+
+    -fx-background-color:
+            rgba(18,18,37,0.65);
+
+    -fx-background-radius: 20;
+
+    -fx-border-color:
+            rgba(139,169,255,0.12);
+
+    -fx-border-radius: 20;
+
+    -fx-border-width: 1;
+
+    -fx-padding: 35;
+}
+
+.empty-state-icon {
+
+    -fx-font-size: 44px;
+
+    -fx-text-fill: #B09EFF;
+}
+
+.empty-state-title {
+
+    -fx-font-size: 20px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #F8F8FA;
+}
+
+.empty-state-description {
+
+    -fx-font-size: 14px;
+
+    -fx-text-fill: #8F96B0;
+}
+
+
+/* =========================================================
+   TEXT STATES
+========================================================= */
+
+.muted-text {
+
+    -fx-text-fill: #7D86A7;
+
+    -fx-font-size: 13px;
+}
+
+.accent-text {
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-weight: bold;
+}
+
+.magenta-text {
+
+    -fx-text-fill: #D96BAA;
+
+    -fx-font-weight: bold;
+}
+
+
+/* =========================================================
+   GENERAL BUTTON
+========================================================= */
+
+.button {
+
+    -fx-cursor: hand;
+}
+
+
+/* =========================================================
+   FOCUS CLEANUP
+========================================================= */
+
+.button:focused,
+.text-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.date-picker:focused {
+
+    -fx-focus-color: transparent;
+
+    -fx-faint-focus-color: transparent;
+}
+/* =========================================================
+   WELCOME JOURNAL
+   ========================================================= */
+
+.welcome-icon {
+
+    -fx-font-size: 68px;
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.28),
+                    18,
+                    0.22,
+                    0,
+                    3
+            );
+}
+
+
+/* =========================================================
+   FLOATING MUSIC NOTES
+   ========================================================= */
+
+.floating-note {
+
+    -fx-font-size: 24px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #B09EFF;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.45),
+                    10,
+                    0.22,
+                    0,
+                    2
+            );
+
+    -fx-pick-on-bounds: false;
+}
+
+
+/* =========================================================
+   END OF ECHOES CSS
+========================================================= */

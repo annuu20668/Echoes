@@ -1,0 +1,704 @@
+/* =========================================================
+   ECHOES STATISTICS
+   Dark Indigo • Lavender • Soft Glow
+   ========================================================= */
+
+
+/* =========================================================
+   STATISTICS CONTENT
+   ========================================================= */
+
+.statistics-content {
+    -fx-background-color: #0A0A18;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+   ========================================================= */
+
+.statistics-heading {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FA;
+}
+
+.statistics-subheading {
+    -fx-font-size: 15px;
+    -fx-text-fill: #A8AEC3;
+}
+
+
+/* =========================================================
+   STATISTICS CARDS
+   ========================================================= */
+
+.stat-card {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #17172A,
+                    #121223
+            );
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color:
+            rgba(155,138,251,0.18);
+
+    -fx-border-width: 1;
+
+    -fx-padding: 20 22;
+
+    -fx-pref-width: 220;
+
+    -fx-pref-height: 130;
+
+    -fx-min-width: 190;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.25),
+                    16,
+                    0.18,
+                    0,
+                    5
+            );
+}
+
+
+/* =========================================================
+   STAT CARD HOVER
+   ========================================================= */
+
+.stat-card:hover {
+    -fx-background-color: #1B1B32;
+
+    -fx-border-color:
+            rgba(155,138,251,0.40);
+
+    -fx-translate-y: -2;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.16),
+                    18,
+                    0.20,
+                    0,
+                    6
+            );
+}
+
+
+/* =========================================================
+   STAT CARD TITLE
+   ========================================================= */
+
+.stat-title {
+    -fx-text-fill: #A8AEC3;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* =========================================================
+   STAT CARD VALUE
+   ========================================================= */
+
+.stat-value {
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 34px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* =========================================================
+   EMOTION STAT CARD
+   ========================================================= */
+
+.emotion-card-emoji {
+    -fx-font-size: 25px;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(176,158,255,0.25),
+                    10,
+                    0.18,
+                    0,
+                    1
+            );
+}
+
+.emotion-card-name {
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
+
+.section-title {
+    -fx-font-size: 21px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #F8F8FA;
+}
+
+.section-subtitle {
+    -fx-font-size: 15px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #B09EFF;
+}
+
+.calendar-description {
+    -fx-font-size: 13px;
+
+    -fx-text-fill: #7D86A7;
+
+    -fx-font-style: italic;
+}
+
+
+/* =========================================================
+   EMOTION ANALYTICS
+   ========================================================= */
+
+.emotion-row {
+    -fx-background-color: transparent;
+
+    -fx-padding: 4 0;
+}
+
+
+/* Emotion name */
+
+.emotion-name {
+    -fx-text-fill: #D8D8E8;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* Emotion percentage */
+
+.emotion-percentage {
+    -fx-text-fill: #B09EFF;
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* Emotion count */
+
+.emotion-count {
+    -fx-text-fill: #858BA6;
+
+    -fx-font-size: 12px;
+}
+
+
+/* =========================================================
+   EMOTION PROGRESS BAR
+   ========================================================= */
+
+.emotion-progress {
+    -fx-background-color: #1B1B34;
+
+    -fx-background-radius: 12;
+
+    -fx-pref-height: 10;
+}
+
+.emotion-progress .track {
+    -fx-background-color: #1B1B34;
+
+    -fx-background-radius: 12;
+}
+
+.emotion-progress .bar {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #8170E5,
+                    #B09EFF
+            );
+
+    -fx-background-radius: 12;
+
+    -fx-background-insets: 0;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    7,
+                    0.15,
+                    0,
+                    1
+            );
+}
+
+
+/* =========================================================
+   CALENDAR CONTAINER
+   ========================================================= */
+
+.calendar-container {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #15152A,
+                    #111122
+            );
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color:
+            rgba(155,138,251,0.15);
+
+    -fx-border-width: 1;
+
+    -fx-padding: 22;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(0,0,0,0.22),
+                    16,
+                    0.15,
+                    0,
+                    5
+            );
+}
+
+
+/* =========================================================
+   CALENDAR MONTH
+   ========================================================= */
+
+.calendar-month {
+    -fx-text-fill: #F8F8FA;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+
+/* =========================================================
+   CALENDAR HEADERS
+   ========================================================= */
+
+.calendar-header {
+    -fx-text-fill: #8F95B6;
+
+    -fx-font-size: 12px;
+
+    -fx-font-weight: bold;
+
+    -fx-alignment: CENTER;
+
+    -fx-pref-width: 38;
+
+    -fx-pref-height: 25;
+}
+
+
+/* =========================================================
+   CALENDAR CELLS
+   ========================================================= */
+
+.calendar-cell {
+    -fx-background-color: #19192F;
+
+    -fx-background-radius: 7;
+
+    -fx-text-fill: #8F95B6;
+
+    -fx-font-size: 12px;
+
+    -fx-alignment: CENTER;
+
+    -fx-pref-width: 38;
+
+    -fx-pref-height: 32;
+
+    -fx-min-width: 38;
+
+    -fx-min-height: 32;
+
+    -fx-max-width: 38;
+
+    -fx-max-height: 32;
+}
+
+
+/* =========================================================
+   CALENDAR CELL HOVER
+   ========================================================= */
+
+.calendar-cell:hover {
+    -fx-background-color: #292747;
+
+    -fx-text-fill: #D8D8E8;
+}
+
+
+/* =========================================================
+   ACTIVE MEMORY DATE
+   ========================================================= */
+
+.calendar-cell-active {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #8170E5,
+                    #A18FFF
+            );
+
+    -fx-background-radius: 7;
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.30),
+                    8,
+                    0.18,
+                    0,
+                    1
+            );
+}
+
+
+/* =========================================================
+   ACTIVE DATE HOVER
+   ========================================================= */
+
+.calendar-cell-active:hover {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #9180F0,
+                    #B09EFF
+            );
+}
+
+
+/* =========================================================
+   CALENDAR LEGEND
+   ========================================================= */
+
+.calendar-legend-empty {
+    -fx-background-color: #1B1B34;
+
+    -fx-background-radius: 4;
+
+    -fx-pref-width: 15;
+
+    -fx-pref-height: 15;
+}
+
+.calendar-legend-active {
+    -fx-background-color: #9B8AFB;
+
+    -fx-background-radius: 4;
+
+    -fx-pref-width: 15;
+
+    -fx-pref-height: 15;
+}
+
+.calendar-legend-text {
+    -fx-text-fill: #8F95B6;
+
+    -fx-font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.statistics-back-button {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #9B8AFB,
+                    #8170E5
+            );
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 12;
+
+    -fx-padding: 9 20;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.22),
+                    10,
+                    0.18,
+                    0,
+                    2
+            );
+}
+
+.statistics-back-button:hover {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #B09EFF,
+                    #9180F0
+            );
+
+    -fx-scale-x: 1.02;
+
+    -fx-scale-y: 1.02;
+}
+
+.statistics-back-button:pressed {
+    -fx-background-color: #7565D0;
+
+    -fx-scale-x: 0.98;
+
+    -fx-scale-y: 0.98;
+}
+
+
+/* =========================================================
+   JAVAFX CHART SUPPORT
+   ========================================================= */
+
+.chart {
+    -fx-background-color: transparent;
+
+    -fx-padding: 12;
+}
+
+.chart-plot-background {
+    -fx-background-color: #121225;
+
+    -fx-background-radius: 18;
+
+    -fx-border-color:
+            rgba(155,138,251,0.14);
+
+    -fx-border-radius: 18;
+
+    -fx-border-width: 1;
+}
+
+.chart-title {
+    -fx-text-fill: #F8F8FA;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+
+    -fx-padding: 8;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #A8AEC3;
+
+    -fx-font-size: 12px;
+}
+
+.axis {
+    -fx-tick-label-fill: #A8AEC3;
+
+    -fx-tick-label-font-size: 12px;
+
+    -fx-tick-mark-visible: false;
+
+    -fx-minor-tick-visible: false;
+}
+
+.axis-label {
+    -fx-text-fill: #A8AEC3;
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: bold;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke:
+            rgba(139,169,255,0.12);
+
+    -fx-stroke-width: 1;
+
+    -fx-stroke-dash-array: 4 6;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+.chart-horizontal-zero-line {
+    -fx-stroke:
+            rgba(155,138,251,0.25);
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill:
+            linear-gradient(
+                    to top,
+                    #8170E5,
+                    #B09EFF
+            );
+
+    -fx-background-radius: 8 8 3 3;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.16),
+                    8,
+                    0.18,
+                    0,
+                    2
+            );
+}
+
+.chart-bar:hover {
+    -fx-bar-fill:
+            linear-gradient(
+                    to top,
+                    #9180F0,
+                    #C0B4FF
+            );
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(176,158,255,0.42),
+                    12,
+                    0.25,
+                    0,
+                    2
+            );
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+}
+
+.chart-alternative-column-fill {
+    -fx-fill: transparent;
+}
+
+.chart-content {
+    -fx-padding: 8;
+}
+
+.chart-pie-label {
+    -fx-fill: #E8E8F2;
+
+    -fx-font-size: 12px;
+}
+
+.chart-pie-label-line {
+    -fx-stroke:
+            rgba(168,174,195,0.45);
+}
+
+.chart-pie-label-line:hover {
+    -fx-stroke: #B09EFF;
+}
+
+.chart-tooltip {
+    -fx-background-color: #17172A;
+
+    -fx-background-radius: 10;
+
+    -fx-border-color:
+            rgba(155,138,251,0.35);
+
+    -fx-border-radius: 10;
+
+    -fx-text-fill: #F8F8FA;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+
+    -fx-pref-width: 10;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+
+    -fx-pref-height: 0;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #343456;
+
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #6256A0;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+
+    -fx-padding: 0;
+}
+
+
+/* =========================================================
+   END OF ECHOES STATISTICS
+   ========================================================= */

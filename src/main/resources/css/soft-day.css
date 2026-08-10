@@ -1,0 +1,523 @@
+/* =========================================================
+   ECHOES
+   SOFT DAY THEME
+   ========================================================= */
+
+
+/* =========================================================
+   ROOT / APPLICATION BACKGROUND
+   ========================================================= */
+
+.root {
+    -fx-background-color: #F4F2FA;
+    -fx-font-family: "Segoe UI";
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.content,
+.settings-content {
+    -fx-background-color: #F4F2FA;
+}
+
+
+/* =========================================================
+   GENERAL TEXT
+   ========================================================= */
+
+.heading {
+    -fx-text-fill: #28253D;
+}
+
+.subheading {
+    -fx-text-fill: #686278;
+}
+
+.section-title {
+    -fx-text-fill: #302D48;
+}
+
+.section-subtitle {
+    -fx-text-fill: #686278;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    -fx-background-color:
+            linear-gradient(
+                    to bottom,
+                    #ECE9F8,
+                    #E3DEF2
+            );
+
+    -fx-border-color: #D1CBE5;
+
+    -fx-border-width: 1;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(45,40,75,0.12),
+                    18,
+                    0.18,
+                    0,
+                    5
+            );
+}
+
+.sidebar-title {
+    -fx-text-fill: #6F5FD4;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #403B58;
+
+    -fx-font-size: 15px;
+
+    -fx-alignment: CENTER_LEFT;
+
+    -fx-background-radius: 12;
+
+    -fx-border-color: transparent;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(111,95,212,0.10);
+
+    -fx-text-fill: #6F5FD4;
+}
+
+.sidebar-button-active {
+    -fx-background-color: rgba(111,95,212,0.14);
+
+    -fx-text-fill: #6F5FD4;
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.search-field {
+    -fx-background-color: #FFFFFF;
+
+    -fx-text-fill: #302D48;
+
+    -fx-prompt-text-fill: #9691A8;
+
+    -fx-border-color: #D8D2E8;
+
+    -fx-border-width: 1;
+}
+
+.search-field:hover {
+    -fx-border-color: #B7ACE0;
+}
+
+.search-field:focused {
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.22),
+                    10,
+                    0.18,
+                    0,
+                    0
+            );
+}
+
+
+/* =========================================================
+   HERO CARD
+   ========================================================= */
+
+.hero-card {
+    -fx-background-color: #FFFFFF;
+
+    -fx-border-color: #DDD7ED;
+
+    -fx-border-width: 1;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(45,40,75,0.12),
+                    18,
+                    0.18,
+                    0,
+                    6
+            );
+}
+
+.hero-card:hover {
+    -fx-background-color: #FFFFFF;
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.22),
+                    22,
+                    0.20,
+                    0,
+                    7
+            );
+}
+
+.hero-song {
+    -fx-text-fill: #7868D8;
+}
+
+.hero-title {
+    -fx-text-fill: #28253D;
+}
+
+.hero-story {
+    -fx-text-fill: #686278;
+}
+
+.hero-badge {
+    -fx-background-color: #EEEAF9;
+
+    -fx-text-fill: #625A7D;
+}
+
+
+/* =========================================================
+   MEMORY CARDS
+   ========================================================= */
+
+.memory-card,
+.echo-card,
+.glass-card {
+    -fx-background-color: #FFFFFF;
+
+    -fx-border-color: #DDD8EE;
+
+    -fx-border-width: 1;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(45,40,75,0.10),
+                    16,
+                    0.18,
+                    0,
+                    5
+            );
+}
+
+.memory-card:hover,
+.echo-card:hover,
+.glass-card:hover {
+    -fx-background-color: #FFFFFF;
+
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    18,
+                    0.20,
+                    0,
+                    6
+            );
+}
+
+
+/* =========================================================
+   MEMORY CARD TEXT
+   ========================================================= */
+
+.memory-title,
+.memory-heading,
+.echo-title {
+    -fx-text-fill: #28253D;
+}
+
+.memory-description,
+.echo-story,
+.memory-story {
+    -fx-text-fill: #686278;
+}
+
+.echo-artist,
+.memory-info,
+.echo-date,
+.echo-mood {
+    -fx-text-fill: #777289;
+}
+/* =========================================================
+   SOFT DAY - EMOTION DISTRIBUTION LABELS
+   ========================================================= */
+
+.emotion-row-label,
+.emotion-label,
+.emotion-name {
+    -fx-text-fill: #403B58;
+}
+
+
+/* =========================================================
+   ACCENT TEXT
+   ========================================================= */
+
+.accent-text {
+    -fx-text-fill: #6F5FD4;
+}
+
+.magenta-text {
+    -fx-text-fill: #B95791;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.begin-button,
+.primary-button,
+.hero-button,
+.settings-save-button {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #9B8AFB,
+                    #8170E5
+            );
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+}
+
+.begin-button:hover,
+.primary-button:hover,
+.hero-button:hover,
+.settings-save-button:hover {
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #AD9EFF,
+                    #9180F0
+            );
+}
+
+
+/* =========================================================
+   SETTINGS
+   ========================================================= */
+
+.settings-title {
+    -fx-text-fill: #28253D;
+}
+
+.settings-subtitle {
+    -fx-text-fill: #686278;
+}
+
+.settings-card {
+    -fx-background-color: #FFFFFF;
+
+    -fx-border-color: #DDD8EE;
+
+    -fx-border-width: 1;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(45,40,75,0.10),
+                    16,
+                    0.18,
+                    0,
+                    5
+            );
+}
+
+.settings-section-title {
+    -fx-text-fill: #302D48;
+}
+
+.settings-label {
+    -fx-text-fill: #514B68;
+}
+
+.settings-description {
+    -fx-text-fill: #686278;
+}
+
+.settings-status {
+    -fx-text-fill: #6F5FD4;
+}
+
+
+/* =========================================================
+   FORM FIELDS
+   ========================================================= */
+
+.modern-field,
+.settings-field {
+    -fx-background-color: #FFFFFF;
+
+    -fx-text-fill: #302D48;
+
+    -fx-prompt-text-fill: #9691A8;
+
+    -fx-border-color: #D8D2E8;
+}
+
+.modern-field:focused,
+.settings-field:focused {
+    -fx-border-color: #9B8AFB;
+
+    -fx-effect:
+            dropshadow(
+                    gaussian,
+                    rgba(155,138,251,0.20),
+                    10,
+                    0.18,
+                    0,
+                    0
+            );
+}
+
+
+/* =========================================================
+   THEME DROPDOWN
+   ========================================================= */
+
+.theme-box {
+    -fx-background-color: #FFFFFF;
+
+    -fx-background-radius: 12;
+
+    -fx-border-color: #D8D2E8;
+
+    -fx-border-radius: 12;
+
+    -fx-border-width: 1;
+
+    -fx-text-fill: #302D48;
+}
+
+.theme-box:hover {
+    -fx-border-color: #9B8AFB;
+}
+
+.theme-box:focused {
+    -fx-border-color: #9B8AFB;
+}
+
+.theme-box .list-cell {
+    -fx-background-color: #FFFFFF;
+
+    -fx-text-fill: #302D48;
+}
+
+.theme-box .list-cell:hover {
+    -fx-background-color: #EEEAF9;
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.stat-card {
+    -fx-background-color: #FFFFFF;
+
+    -fx-border-color: #DDD8EE;
+
+    -fx-border-width: 1;
+}
+
+.stat-title {
+    -fx-text-fill: #686278;
+}
+
+.stat-value {
+    -fx-text-fill: #6F5FD4;
+}
+
+.emotion-card-name {
+    -fx-text-fill: #6F5FD4;
+}
+
+.emotion-card-emoji {
+    -fx-text-fill: #514B68;
+}
+
+
+/* =========================================================
+   CALENDAR
+   ========================================================= */
+
+.calendar-description {
+    -fx-text-fill: #777289;
+}
+
+.calendar-legend-text {
+    -fx-text-fill: #686278;
+}
+
+
+/* =========================================================
+   SCROLLPANE
+   ========================================================= */
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #C4BEDD;
+
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #9B8AFB;
+}
+
+
+/* =========================================================
+   GENERAL BUTTON CLEANUP
+   ========================================================= */
+
+.button {
+    -fx-cursor: hand;
+}

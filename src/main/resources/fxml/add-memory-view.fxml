@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.echoes.echoes.controller.AddMemoryController"
+            styleClass="root">
+
+    <center>
+
+        <VBox spacing="28"
+              alignment="TOP_CENTER"
+              styleClass="content">
+
+            <padding>
+                <Insets top="30"
+                        right="60"
+                        bottom="40"
+                        left="60"/>
+            </padding>
+
+            <!-- ================= HEADER ================= -->
+
+            <HBox alignment="CENTER_LEFT"
+                  spacing="20"
+                  maxWidth="650">
+
+                <Button text="← Back"
+                        onAction="#handleBack"
+                        styleClass="glass-button"/>
+
+                <VBox spacing="4">
+
+                    <Label fx:id="pageTitle"
+                           text="Add Memory"
+                           styleClass="page-title"/>
+
+                    <Label fx:id="pageSubtitle"
+                           text="Capture a moment you'll want to revisit."
+                           styleClass="page-subtitle"/>
+
+                </VBox>
+
+            </HBox>
+
+            <!-- ================= FORM ================= -->
+
+            <VBox spacing="18"
+                  maxWidth="650"
+                  styleClass="glass-panel">
+
+                <padding>
+                    <Insets top="30"
+                            right="30"
+                            bottom="30"
+                            left="30"/>
+                </padding>
+
+                <HBox spacing="10">
+
+                    <TextField fx:id="songField"
+                               promptText="🎵 Search Spotify"
+                               HBox.hgrow="ALWAYS"
+                               styleClass="search-field"/>
+
+                    <Button text="Search"
+                            onAction="#handleMusicSearch"
+                            styleClass="secondary-button"/>
+
+                </HBox>
+                <ListView fx:id="spotifyResultsList"
+                          prefHeight="220"
+                          maxHeight="220"
+                          styleClass="spotify-results-list"/>
+
+                <TextField fx:id="artistField"
+                           promptText="🎤 Artist"
+                           styleClass="search-field"/>
+                <HBox spacing="12" alignment="CENTER_LEFT">
+
+                    <Button fx:id="chooseSongButton"
+                            text="🎵 Choose Audio"
+                            onAction="#handleChooseAudio"
+                            styleClass="secondary-button"/>
+
+                    <Label fx:id="selectedAudioLabel"
+                           text="No audio selected"
+                           styleClass="memory-info"/>
+
+                </HBox>
+
+                <TextField fx:id="titleField"
+                           promptText="✨ Memory Title"
+                           styleClass="search-field"/>
+
+                <TextArea fx:id="storyArea"
+                          promptText="Tell your story..."
+                          prefRowCount="7"
+                          wrapText="true"
+                          styleClass="glass-text-area"/>
+
+                <HBox spacing="15">
+
+                    <ComboBox fx:id="emotionBox"
+                              promptText="😊 Emotion"
+                              HBox.hgrow="ALWAYS"
+                              maxWidth="1.7976931348623157E308"
+                              styleClass="glass-combo"/>
+
+                    <DatePicker fx:id="datePicker"
+                                HBox.hgrow="ALWAYS"
+                                maxWidth="1.7976931348623157E308"
+                                styleClass="glass-date-picker"/>
+
+                </HBox>
+
+                <TextField fx:id="locationField"
+                           promptText="📍 Location (Optional)"
+                           styleClass="search-field"/>
+
+                <Button fx:id="saveButton"
+                        text="💙 Save Memory"
+                        onAction="#handleSaveMemory"
+                        maxWidth="1.7976931348623157E308"
+                        styleClass="begin-button"/>
+
+            </VBox>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>
